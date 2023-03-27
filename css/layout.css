@@ -1,0 +1,1178 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, html{
+    font-family: 'Pretendard-Regular';
+}
+
+/*-------------------- HEADER --------------------*/
+
+.header-wrapper {
+    width: 100%;
+    height: 124px;
+}
+
+.header-wrapper .inner {
+    position: relative;
+}
+
+/* header - logo */
+.header-wrapper .inner .logo {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: teal;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.header-wrapper .inner .logo span {
+    display: inline-block;
+    font-size: 45px;
+    line-height: 32px;
+}
+
+.header-wrapper .inner .logo span:nth-of-type(1){
+    letter-spacing: 4px;
+}
+.header-wrapper .inner .logo span:nth-of-type(2){
+    letter-spacing: 4px;
+}
+
+.header-wrapper .inner .logo .sub-text {
+    color: #222222;
+}
+
+/* header - user */
+.header-wrapper .inner .user-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.header-wrapper .inner .user-wrapper>a {
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 0px;
+}
+
+.header-wrapper .inner .user-wrapper>a>span {
+    color: #000000;
+    font-size: 40px;
+}
+
+/* -------------------- main -------------------- */
+
+.main-slide {
+    position: relative;
+    width: 100%;
+    height: 598px;
+    overflow: hidden;
+    margin: 0 auto 150px auto;
+}
+
+/* main-slide - btn */
+.main-slide .btn {
+    position: absolute;
+    z-index: 1;
+}
+
+.main-slide .btn span {
+    font-size: 60px;
+    color: #ffffff;
+    opacity: 0.5;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.main-slide .btn span:hover {
+    opacity: 1;
+}
+
+.main-slide .prev {
+    left: 51px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-slide .next {
+    right: 51px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* main-slide - selected(bar) */
+.main-slide .page-selected {
+    position: absolute;
+    width: 270px;
+    height: 3px;
+    left: 50%;
+    bottom: 39px;
+    transform: translateX(-50%);
+}
+
+.main-slide .page-selected li {
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+.main-slide .page-selected li.on {
+    opacity: 1;
+}
+
+/* real - main-slide */
+.main-slide .slide-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.main-slide .slide-wrapper li {
+    position: absolute;
+    float: left;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    transition: 1500ms;
+    opacity: 0;
+}
+
+.main-slide .slide-wrapper li:first-of-type .bg-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    background: url("../images/mainSlideImage/firstImg.jpg") no-repeat center center / auto 100%;
+    transform: scaleX(-1);
+    box-shadow: inset -250px 0px 150px 10px black; 
+}
+.main-slide .slide-wrapper li:nth-child(2) .bg-img{
+    position: absolute;
+    right: -147px;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    background: url("../images/mainSlideImage/secondImg.jfif") no-repeat center center / auto 100%;
+    box-shadow: inset 250px 0px 280px 10px black; 
+}
+
+.main-slide .slide-wrapper li:nth-child(3) .bg-img{
+    position: absolute;
+    right: -251px;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    background: url("../images/mainSlideImage/thirdImg.jfif") no-repeat center right 100px / auto 100%;
+    box-shadow: inset 250px 0px 280px 10px black; 
+}
+
+.main-slide .slide-wrapper li.on {
+    opacity: 1;
+}
+
+.main-slide .slide-wrapper .text-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-slide .slide-wrapper .text-wrapper>div>span {
+    color: white;
+}
+
+.main-slide .slide-wrapper .text-wrapper .sub-title {
+    margin-bottom: 20px;
+}
+
+.main-slide .slide-wrapper .text-wrapper .sub-title span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main-slide .slide-wrapper .text-wrapper .main-title {
+    margin-bottom: 50px;
+}
+
+.main-slide .slide-wrapper .text-wrapper .main-title span {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.main-slide .slide-wrapper .text-wrapper .main-link {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 20px;
+    background-color: teal;
+}
+
+/* main-container */
+.main-container {
+    width: 100%;
+    height: 523px;
+    margin-bottom: 180px;
+}
+
+.main-container .inner p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.main-container .inner .title span {
+    color: teal;
+}
+
+.main-container .inner div {
+    float: left;
+}
+
+.main-container .perfume-container {
+    position: relative;
+    width: 477px;
+    height: 100%;
+}
+
+
+
+.main-container .perfume-container .list-container {
+    width: 100%;
+}
+
+
+
+.main-container .perfume-container .list-container div {
+    float: left;
+    width: 50%;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+.main-container .perfume-container .list-container .alert {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    background-color: teal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    cursor: inherit;
+}
+
+.main-container .perfume-container .list-container .alert span {
+    color: #ffffff;
+    line-height: 70px;
+}
+
+
+.main-container .perfume-container .list-container span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-container .perfume-container .list-container div ul {
+    width: 100%;
+    height: 0px;
+    display: none;
+    overflow-y: scroll;
+    transition: .5s;
+}
+
+.main-container .perfume-container .list-container div ul::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container .perfume-container .list-container div ul.on {
+    height: 300px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    display: block;
+}
+
+.main-container .perfume-container .list-container div ul li {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 1;
+}
+
+.main-container .perfume-container .list-container .brand-wrapper {
+    left: 0;
+}
+
+.main-container .perfume-container .list-container .brand-wrapper span {
+    font-size: 23px;
+}
+
+.main-container .perfume-container .list-container .item-wrapper {
+    right: 0;
+}
+
+.main-container .perfume-container .list-container .item-wrapper span {
+    display: inline-block;
+    font-size: 23px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.main-container .perfume-container .perfume-img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+}
+
+.main-container .fashion-container {
+    width: calc(100% - 477px);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.main-container .fashion-container .box-shadow {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 2000px;
+    height: 900px;
+    z-index: 2;
+    box-shadow: inset 100px 0px 100px 100px white;
+}
+
+.main-container .fashion-container .box-shadow2 {
+    position: absolute;
+    top: -200px;
+    right: 0;
+    width: 1124px;
+    height: 900px;
+    z-index: 2;
+    box-shadow: inset -100px 0px 100px 100px white;
+}
+
+.main-container .fashion-container .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: .5s;
+}
+
+.main-container .fashion-container .btn:hover {
+    opacity: 1;
+}
+
+.main-container .fashion-container .f-prev {
+    left: 0;
+}
+
+.main-container .fashion-container .f-next {
+    right: 0;
+}
+
+.main-container .fashion-container .btn span {
+    font-size: 60px;
+    color: black;
+    opacity: 1;
+}
+
+
+.main-container .fashion-container .fashion-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-1159.5px);
+    width: 3478.5px;
+    height: 100%;
+    transition: 500ms;
+}
+
+.main-container .fashion-container .fashion-slide li {
+    float: left;
+    list-style: none;
+    width: 350px;
+    height: 100%;
+    /* background-color: yellow; */
+    margin-right: 36.5px;
+}
+
+/* brand-item */
+.brand-item {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.text-wrap {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.text-wrap .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-wrap .title span{
+    color: teal;
+}
+
+.text-wrap a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: black;
+    text-decoration: none;
+}
+
+.brand-item .brand-wrap {
+    margin: 0 auto;
+    width: 1108px;
+}
+
+.brand-item .brand-wrap .brand-info {
+    float: left;
+    width: 168px;
+    height: 135px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    opacity: 0.4;
+    transition: 200ms;
+}
+
+.brand-item .brand-wrap .brand-info.on {
+    opacity: 1;
+    margin-top: -9px;
+    scale: 1.2;
+}
+
+.brand-item .brand-wrap .brand-info.on .brand-detail span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.brand-item .brand-wrap .brand-info.on .brand-detail:after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.brand-item .brand-wrap .brand-info:last-of-type {
+    margin-right: 0px;
+}
+
+.brand-item .brand-wrap .brand-info .brand-logo {
+    width: 100%;
+    height: 100px;
+}
+
+.brand-item .brand-wrap .maison .brand-logo {
+    background: url("../images/maison/KakaoTalk_20230217_114900147.png") no-repeat center center / 130px 30px;
+}
+
+.brand-item .brand-wrap .jomalone .brand-logo {
+    background: url("../images/jomalone/조말론로고.png") no-repeat center center / 130px 30px;
+}
+
+.brand-item .brand-wrap .kilian .brand-logo {
+    background: url("../images/kilian/KakaoTalk_20230217_114834576.png") no-repeat center center / 130px 30px;
+}
+
+.brand-item .brand-wrap .byredo .brand-logo {
+    opacity: 0.8;
+    background: url("../images/byredo/KakaoTalk_20230217_114853718.png") no-repeat center center / 130px 20px;
+}
+
+.brand-item .brand-wrap .tomford .brand-logo {
+    opacity: 0.8;
+    background: url("../images/tomford/KakaoTalk_20230217_114826193.png") no-repeat center center / 130px 20px;
+}
+
+.brand-item .brand-wrap .kenneth .brand-logo {
+    opacity: 0.8;
+    background: url("../images/kenneth/KakaoTalk_20230217_114839833.png") no-repeat center center / 130px 20px;
+}
+
+.brand-item .brand-wrap .brand-info .brand-detail {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+
+.brand-item .brand-wrap .brand-info .brand-detail span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.brand-item .item-wrap {
+    margin-top: 50px;
+    transition: .5s;
+    display: none;
+}
+
+.brand-item .item-wrap .item-info {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 420px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.brand-item .item-wrap .item-info a {
+    text-decoration: none;
+}
+
+.brand-item .item-wrap .item-info .item-img {
+    width: 100%;
+    height: calc(100% - 117px);
+    transition: 200ms;
+}
+
+.brand-item .item-wrap .item-info .item-img:hover {
+    scale: 1.05;
+}
+
+.brand-item .item-wrap .item-info .item-detail {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.brand-item .item-wrap .item-info .item-detail .item-brand {
+    padding: 21px 0px 12px 0px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #737171;
+}
+
+.brand-item .item-wrap .item-info .item-detail .item-name {
+    margin-bottom: 33px;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.brand-item .item-wrap .item-info .item-detail .item-price {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.brand-item .item-wrap .item-info:nth-of-type(5n) {
+    margin-right: 0px;
+}
+
+/* visual-banner */
+.visual-banner {
+    position: relative;
+    width: 100%;
+    height: 178px;
+    background: url("../images/visualBanner/KakaoTalk_20230223_103908180.png") no-repeat center center / 100% auto;
+    margin-bottom: 150px;
+}
+
+.visual-banner span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+/* ---------------perfume-rank--------------- */
+
+.perfume-rank {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.perfume-rank .visual-wrapper {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: #222222;
+}
+
+.perfume-rank .visual-wrapper>div {
+    float: left;
+    margin-top: 70px;
+}
+
+
+.perfume-rank .visual-wrapper .perfume-explain ul li .perfume-image {
+    /* position: absolute; */
+    width: 400px;
+    height: 400px;
+    margin-left: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 350px;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul .top1 .perfume-image {
+    background-image: url("../images/jomalone/jomalone1.png");
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul .top2 .perfume-image {
+    background-image: url("../images/maison/maison1.png");
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul .top3 .perfume-image {
+    background-image: url("../images/maison/maison9.png");
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul .top4 .perfume-image {
+    background-image: url("../images/tomford/tomford7.png");
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul .top5 .perfume-image {
+    background-image: url("../images/kenneth/kenneth4.png");
+}
+
+.perfume-rank .visual-wrapper .perfume-explain {
+    width: 100%;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul li {
+    transition: 1000ms;
+    width: 100%;
+    opacity: 0;
+    display: none;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul li.on {
+    opacity: 1;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul li div {
+    float: left;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul li .text-wrap {
+    margin-left: 70px;
+    width: 800px;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain ul li span {
+    display: block;
+    color: #ffffff;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain .explain-brand {
+    color: #737171;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain .explain-perfume {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.perfume-rank .visual-wrapper .perfume-explain .explain-detail {
+    font-size: 18px;
+    color: #dddddd;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list {
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #222222;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li {
+    position: relative;
+
+    display: block;
+    height: calc(100% / 5);
+    width: 200px;
+    background-color: #222222;
+    box-sizing: border-box;
+
+    border-left: solid 1px #000;
+    border-bottom: 1px solid #000;
+    transition: 350ms;
+    cursor: pointer;
+    text-align: center;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li:first-of-type{
+    border-radius: 0px 10px 0px 0px;
+}
+.perfume-rank .visual-wrapper .perfume-top-list li:last-of-type{
+    border-radius: 0px 0px 10px 0px;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li p span {
+    display: inline-block;
+    color: #ffffff;
+    opacity: 0.3;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li:hover {
+    transform: scale(1.02);
+    background-color: #f4f5f7;
+    border-bottom: none;
+    opacity: 0.9;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li:hover span {
+    color: #000;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li.on {
+    transition: 0ms;
+    transform: scale(1.02);
+    background-color: #f4f5f7;
+    font-weight: bold;
+    border-bottom: none;
+    opacity: 1;
+}
+
+.perfume-rank .visual-wrapper .perfume-top-list li.on span {
+    color: #000;
+    opacity: 1;
+}
+
+/* ---------------visual-banner2--------------- */
+
+.visual-banner2 {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.visual-banner2 a {
+    display: inline-block;
+    width: calc((100% - 50px)/2);
+    height: 178px;
+    background-color: rgb(46, 46, 46);
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+.visual-banner2 a span {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 178px;
+}
+
+.visual-banner2 a span:last-of-type {
+    color: teal;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.visual-banner2 .left-visual-banner2 {
+    float: left;
+    border-radius: 0px 10px 10px 0px;
+    background-image: url("../images/visualLook/visualLook1.png");
+    background-repeat: no-repeat;
+    background-position: center right 5%;
+    background-size: 18% auto;
+}
+
+.visual-banner2 .right-visual-banner2 {
+    float: right;
+    border-radius: 10px 0px 0px 10px;
+    background-image: url("../images/visualLook/visualLook5.png");
+    background-repeat: no-repeat;
+    background-position: center left 5%;
+    background-size: 18% auto;
+}
+
+/* ---------------look-book---------------- */
+
+.look-book {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.look-book .look-list .look {
+    float: left;
+    width: calc((100% - 120px)/5);
+    /* height: 245px; */
+    margin-right: 30px;
+}
+
+.look-book .look-list .look:last-of-type {
+    margin-right: 0px;
+}
+
+.look-book .look-list .look .look-info {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.look-book .look-list .look .look-info .look-img {
+    width: 100%;
+    height: 330px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 5px;
+}
+
+.look-book .look-list .look:nth-of-type(1) .look-info .look-img {
+    background: url("../images/look/look1.JPG") no-repeat center center / 100% auto;
+}
+
+.look-book .look-list .look:nth-of-type(2) .look-info .look-img {
+    background: url("../images/look/look2.JPG") no-repeat center center / 100% auto;
+}
+
+.look-book .look-list .look:nth-of-type(3) .look-info .look-img {
+    background: url("../images/look/look3.JPG") no-repeat center center / 100% auto;
+}
+
+.look-book .look-list .look:nth-of-type(4) .look-info .look-img {
+    background: url("../images/look/look4.JPG") no-repeat center center / 100% auto;
+}
+
+.look-book .look-list .look:nth-of-type(5) .look-info .look-img {
+    background: url("../images/look/look5.JPG") no-repeat center center / 100% auto;
+}
+
+.look-book .look-list .look .look-info .look-brand {
+    bottom: 47px;
+    margin-bottom: 5px;
+}
+
+.look-book .look-list .look .look-info .look-brand span {
+    font-size: 13px;
+    color: #737171;
+}
+
+.look-book .look-list .look .look-info .look-name {
+    margin-bottom: 10px;
+}
+
+.look-book .look-list .look .look-info .look-name span {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -0.5;
+}
+
+.look-book .look-list .look .look-info .look-hashtag {}
+
+.look-book .look-list .look .look-info .look-hashtag li {
+    position: relative;
+    width: 40px;
+    height: 17px;
+    float: left;
+    background-color: #f4f5f7;
+    text-align: center;
+    padding: 0 3px;
+}
+
+.look-book .look-list .look .look-info .look-hashtag li span {
+    font-size: 12px;
+    color: #737171;
+    letter-spacing: -0.5;
+}
+
+.look-book .look-list .look .look-info .look-hashtag li span:before {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #8b8b8b;
+    border-radius: 50%;
+}
+
+.look-book .look-list .look .look-info .look-hashtag li:first-of-type span:before {
+    display: none;
+}
+
+/* ----------------------------------------footer------------------------------------- */
+
+footer {
+    border-top: 1px solid #dddddd;
+    margin-bottom: 48px;
+}
+
+.about-us {
+    width: 100%;
+    padding: 30px 0px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 30px;
+}
+
+.about-us .cs-info {
+    float: left;
+    width: calc(40%);
+}
+
+.about-us .cs-info div {
+    width: 100%;
+}
+
+.about-us .cs-info .cs-text span {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.about-us .cs-info .cs-num p {
+    font-size: 50px;
+    line-height: 50px;
+    padding: 34px 0px 18px 0px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.about-us .cs-info .cs-runtime p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #737171;
+    margin-top: 16px;
+}
+
+.about-us .us-etc {
+    float: right;
+}
+
+.about-us .us-etc ul li {
+    float: left;
+
+    margin-left: 20px;
+}
+
+.about-us .us-etc ul li a {
+    display: block;
+    padding: 37px 140px 40px 38px;
+    background: rgba(0 , 128, 128, 0.73);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.about-us .us-etc ul li:nth-child(1) a {
+    background-image: url("../images/icon/계약아이콘.png");
+    background-repeat: no-repeat;
+    background-position: 320px 43px;
+    background-size: 42px 40px;
+}
+
+.about-us .us-etc ul li:nth-child(2) a {
+    background-image: url("../images/icon/건물아이콘.png");
+    background-repeat: no-repeat;
+    background-position: 335px 40px;
+    background-size: 42px 46px;
+}
+
+.about-us .us-etc ul li .main-text {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.about-us .us-etc ul li span {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about-us .us-etc ul li .sub-text {
+    font-size: 14px;
+}
+
+
+.about-company .company-info {
+    width: calc(60%);
+    float: left;
+}
+
+.about-company .company-info .company-detail {
+    width: 100%;
+    margin-bottom: 47px;
+}
+
+.about-company .company-info .company-detail div {
+    width: calc(40%);
+    float: left;
+}
+
+.about-company .company-info .company-detail div p {
+    font-size: 13px;
+    height: 10px;
+    letter-spacing: -0.5;
+    color: #737171;
+}
+
+.about-company .company-info .company-detail div p:nth-of-type(2) {
+    margin: 11px 0px;
+}
+
+.about-company .company-info .company-detail .company-name {
+    margin-right: -50px;
+}
+
+.about-company .company-info .company-policy div,
+.about-company .company-info .company-policy p {
+    width: 100%;
+    height: 10px;
+}
+
+.about-company .company-info .company-policy div span,
+.about-company .company-info .company-policy div a,
+.about-company .company-info .company-policy p {
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: -0.5;
+    color: #737171;
+}
+
+.about-company .company-info .company-policy .trade-policy a {
+    display: inline-block;
+    font-size: 11px;
+    border: 1px solid #dddddd;
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+.about-company .company-info .company-policy .trade-policy2 {
+    margin: 13px 0px 28px 0px;
+}
+
+
+.about-company .company-etc {
+    position: relative;
+    width: calc(40%);
+    float: right;
+    background-color: yellowgreen;
+}
+
+.about-company .company-etc ul {
+    position: absolute;
+    right: 0;
+}
+
+.about-company .company-etc ul li {
+    float: left;
+}
+
+.about-company .company-etc ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-company .company-etc .company-policy3 li {
+    margin-left: 60px;
+}
+
+.about-company .company-etc .company-policy3 li:last-of-type a {
+    font-weight: bold;
+}
+
+.about-company .company-etc .company-FAQ {
+    top: 80px;
+}
+
+.about-company .company-etc .company-FAQ li a {
+    display: inline-block;
+    border: solid 1px #dddddd;
+    padding: 12px 24px;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.about-company .company-etc .company-SNS {
+    top: 140px;
+}
+
+.about-company .company-etc .company-SNS li a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+}
+
+.about-company .company-etc .company-SNS li:nth-child(1) a {
+    background: url("../images/sns/instagram.png") no-repeat center center / auto 24px;
+}
+
+.about-company .company-etc .company-SNS li:nth-child(2) a {
+    background: url("../images/sns/kakaotalk.png") no-repeat center center / auto 24px;
+}
+
+.about-company .company-etc .company-SNS li:nth-child(3) a {
+    background: url("../images/sns/youtube.png") no-repeat center center / auto 24px;
+}
