@@ -169,7 +169,7 @@ function findBrandName(brandName) {
     for (let i = 0; i < brandNames.length; i++) {
         if (brandNames[i].innerText == brandName) {
             var brand = brandNames[i].parentElement.parentElement.classList[1];
-            imgSrc += "../images/" + brand + "/" + brand;
+            imgSrc += "./images/" + brand + "/" + brand;
         }
     }
     return imgSrc;
