@@ -47,15 +47,15 @@ var ex2 = document.querySelectorAll('.ex2');
 var ex3 = document.querySelectorAll('.ex3');
 
 for (let i = 0; i < ex1.length; i++) {
-    ex1[i].style.background = "url('../images/fashion/shadow1.png') no-repeat center center / 350px auto";
+    ex1[i].style.background = "url('./images/fashion/shadow1.png') no-repeat center center / 350px auto";
 }
 
 for (let i = 0; i < ex2.length; i++) {
-    ex2[i].style.background = "url('../images/fashion/shadow2.png') no-repeat center center / 350px auto";
+    ex2[i].style.background = "url('./images/fashion/shadow2.png') no-repeat center center / 350px auto";
 }
 
 for (let i = 0; i < ex3.length; i++) {
-    ex3[i].style.background = "url('../images/fashion/shadow3.png') no-repeat center center / 350px auto";
+    ex3[i].style.background = "url('./images/fashion/shadow3.png') no-repeat center center / 350px auto";
 }
 
 //-------------------------------------------------------------------------
