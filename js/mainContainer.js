@@ -134,28 +134,28 @@ brand.forEach((li, index) => {
                 
                 if (cycle) {
                     for (let i = 0; i < ex1.length; i++) {
-                        ex1[i].style.background = "url('../images/fashion/fashion1.png') no-repeat center center / 350px auto";
+                        ex1[i].style.background = "url('./images/fashion/fashion1.png') no-repeat center center / 350px auto";
                     }
                     
                     for (let i = 0; i < ex2.length; i++) {
-                        ex2[i].style.background = "url('../images/fashion/fashion2.png') no-repeat center center / 350px auto";
+                        ex2[i].style.background = "url('./images/fashion/fashion2.png') no-repeat center center / 350px auto";
                     }
                     
                     for (let i = 0; i < ex3.length; i++) {
-                        ex3[i].style.background = "url('../images/fashion/fashion3.png') no-repeat center center / 350px auto";
+                        ex3[i].style.background = "url('./images/fashion/fashion3.png') no-repeat center center / 350px auto";
                     }
                     cycle = false;
                 }else{
                     for (let i = 0; i < ex1.length; i++) {
-                        ex1[i].style.background = "url('../images/fashion/fashion4.png') no-repeat center center / 350px auto";
+                        ex1[i].style.background = "url('./images/fashion/fashion4.png') no-repeat center center / 350px auto";
                     }
                     
                     for (let i = 0; i < ex2.length; i++) {
-                        ex2[i].style.background = "url('../images/fashion/fashion5.png') no-repeat center center / 350px auto";
+                        ex2[i].style.background = "url('./images/fashion/fashion5.png') no-repeat center center / 350px auto";
                     }
                     
                     for (let i = 0; i < ex3.length; i++) {
-                        ex3[i].style.background = "url('../images/fashion/fashion6.png') no-repeat center center / 350px auto";
+                        ex3[i].style.background = "url('./images/fashion/fashion6.png') no-repeat center center / 350px auto";
                     }
                     cycle = true;
                 }

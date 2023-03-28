@@ -703,64 +703,64 @@ lists.forEach((el, index) => {
                         var ran = parseInt(Math.random() * 10) % minIndex.length; //0 ~ minIndex.length - 1 중 1개만 생성
                         console.log(ran);
                         if ((perfumeArr[minIndex[ran]].name).substring(0, 2) == "by") {
-                            finalResult.style.background = "url('../images/byredo/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 345px"
+                            finalResult.style.background = "url('./images/byredo/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 345px"
                             finalBrand.innerHTML = "바이레도";
                             finalName.innerHTML = perfumeArr[minIndex[ran]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[ran]].link);
                         } else if ((perfumeArr[minIndex[ran]].name).substring(0, 2) == "jo") {
-                            finalResult.style.background = "url('../images/jomalone/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/jomalone/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "조말론";
                             finalName.innerHTML = perfumeArr[minIndex[ran]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[ran]].link);
                         } else if ((perfumeArr[minIndex[ran]].name).substring(0, 2) == "ke") {
-                            finalResult.style.background = "url('../images/kenneth/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/kenneth/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "케네스콜";
                             finalName.innerHTML = perfumeArr[minIndex[ran]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[ran]].link);
                         } else if ((perfumeArr[minIndex[ran]].name).substring(0, 2) == "ki") {
-                            finalResult.style.background = "url('../images/klilian/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/klilian/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "킬리안";
                             finalName.innerHTML = perfumeArr[minIndex[ran]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[ran]].link);
                         } else if ((perfumeArr[minIndex[ran]].name).substring(0, 2) == "ma") {
-                            finalResult.style.background = "url('../images/maison/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/maison/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "메종마르지엘라";
                             finalName.innerHTML = perfumeArr[minIndex[ran]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[ran]].link);
                         } else {
-                            finalResult.style.background = "url('../images/tomford/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/tomford/" + perfumeArr[minIndex[ran]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "톰포드";
                             finalName.innerHTML = perfumeArr[minIndex[ran]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[ran]].link);
                         }
                     } else {
                         if ((perfumeArr[minIndex[0]].name).substring(0, 2) == "by") {
-                            finalResult.style.background = "url('../images/byredo/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/byredo/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "바이레도";
                             finalName.innerHTML = perfumeArr[minIndex[0]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[0]].link);
                         } else if ((perfumeArr[minIndex[0]].name).substring(0, 2) == "jo") {
-                            finalResult.style.background = "url('../images/jomalone/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/jomalone/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "조말론";
                             finalName.innerHTML = perfumeArr[minIndex[0]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[0]].link);
                         } else if ((perfumeArr[minIndex[0]].name).substring(0, 2) == "ke") {
-                            finalResult.style.background = "url('../images/kenneth/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/kenneth/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "케네스콜";
                             finalName.innerHTML = perfumeArr[minIndex[0]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[0]].link);
                         } else if ((perfumeArr[minIndex[0]].name).substring(0, 2) == "ki") {
-                            finalResult.style.background = "url('../images/klilian/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/klilian/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "킬리안";
                             finalName.innerHTML = perfumeArr[minIndex[0]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[0]].link);
                         } else if ((perfumeArr[minIndex[0]].name).substring(0, 2) == "ma") {
-                            finalResult.style.background = "url('../images/maison/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/maison/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "메종마르지엘라";
                             finalName.innerHTML = perfumeArr[minIndex[0]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[0]].link);
                         } else {
-                            finalResult.style.background = "url('../images/tomford/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
+                            finalResult.style.background = "url('./images/tomford/" + perfumeArr[minIndex[0]].name + ".png') no-repeat center center / auto 350px"
                             finalBrand.innerHTML = "톰포드";
                             finalName.innerHTML = perfumeArr[minIndex[0]].product;
                             buyPage.setAttribute('href', perfumeArr[minIndex[0]].link);
@@ -865,8 +865,8 @@ function setImg() {
         }
     }
     if (count <= 9) {
-        lists[count].children[2].children[0].style.background = "url('../images/" + style1 + "/" + style1 + ran3 + ".png') no-repeat bottom -30px center";
-        lists[count].children[2].children[1].style.background = "url('../images/" + style2 + "/" + style2 + ran4 + ".png') no-repeat bottom -30px center";
+        lists[count].children[2].children[0].style.background = "url('./images/" + style1 + "/" + style1 + ran3 + ".png') no-repeat bottom -30px center";
+        lists[count].children[2].children[1].style.background = "url('./images/" + style2 + "/" + style2 + ran4 + ".png') no-repeat bottom -30px center";
         count++;
     }
 }
