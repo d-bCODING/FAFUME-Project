@@ -318,12 +318,22 @@ html {
     transition: 1000ms;
 }
 
+.result-container .result .link-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
 .result-container .result a{
     display: inline-block;
-    margin-top: 30px;
-    color: teal;
     text-decoration: none;
     font-weight: bold;
+    color: black;
+}
+
+.result-container .result .page-to-buy{
+    color: teal;
 }
 
 .result-container .result.on {
